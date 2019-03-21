@@ -16,12 +16,24 @@ array of sentiment scores corresponding to the sentences.
   available.
 
 **procedure**
-1. clone this repository and change directory into the cloned location
-1. install the dependencies with `pip install -r requirements.txt`
-1. start the server with `FLASK_APP=app.py flask run`
+1. clone this repository and change directory into the cloned location.
+1. install the dependencies.
+
+   ```
+   pip install -r requirements.txt
+   ```
+1. start the server.
+
+   ```
+   FLASK_APP=app.py flask run
+   ```
 1. access the service with curl
 
-   `curl http://localhost:5000 -H "Content-Type: application/json" -d "I love applesauce!"`
+   ```
+   curl http://localhost:5000 \
+     -H "Content-Type: application/json" \
+     -d "I love applesauce!"
+   ```
 
 If everything has worked you will see a result from the service
 that looks similar to this:
