@@ -57,10 +57,14 @@ OpenShift.
 1. login to your OpenShift account and select, or create, a project.
 1. build and deploy the service.
 
-   `oc new-app centos/python-36-centos7~https://github.com/elmiko/social-moments-service`
+   ```
+   oc new-app centos/python-36-centos7~https://github.com/elmiko/social-moments-service
+   ```
 1. expose a route to your service.
 
-   `oc expose service/social-moments-service`
+   ```
+   oc expose service/social-moments-service
+   ```
 1. access the service with curl.
 
    ```
