@@ -51,9 +51,11 @@ OpenShift.
    `oc expose service/social-moments-service`
 1. access the service with curl.
 
-   ```curl http://`oc get routes/social-moments-service --template='{{.spec.host}}'` \
+   ```
+   curl http://`oc get routes/social-moments-service --template='{{.spec.host}}'` \
         -H "Content-Type: application/json" \
-        -d "I love applesauce!"```
+        -d "I love applesauce!"
+   ```
 
 If everything has worked you will see a result similar to one in the previous
 example.
