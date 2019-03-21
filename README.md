@@ -20,6 +20,7 @@ array of sentiment scores corresponding to the sentences.
 1. install the dependencies with `pip install -r requirements.txt`
 1. start the server with `FLASK_APP=app.py flask run`
 1. access the server with curl
+
    `curl http://localhost:5000 -H "Content-Type: application/json" -d "I love applesauce!"`
 
 If everything has worked you will see a result from the server
