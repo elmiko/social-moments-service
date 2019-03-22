@@ -9,8 +9,8 @@ english = spacy.load("en_core_web_sm")
 
 def get_sentiments(text):
     result = english(text)
-    sents = [str(sent) for sent in result.sents]
-    sentiments = [analyzer.polarity_scores(str(s)) for s in sents]
+    sentences = [str(sent) for sent in result.sents]
+    sentiments = [analyzer.polarity_scores(str(s)) for s in sentences]
     return sentiments
 
 
